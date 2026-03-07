@@ -1,15 +1,4 @@
 :root {
-  --bg: #f4efe7;
-  --paper: #fffaf1;
-  --ink: #1f1f1f;
-  --muted: #5e5b56;
-  --line: #dfd5c3;
-  --brand: #0e7a68;
-  --brand-2: #d05a2f;
-  --shadow: 0 12px 32px rgba(31, 31, 31, 0.08);
-}
-
-:root[data-theme='dark'] {
   --bg: #12161b;
   --paper: #1a2027;
   --ink: #e8edf3;
@@ -18,19 +7,6 @@
   --brand: #59cbb7;
   --brand-2: #ff8d69;
   --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg: #12161b;
-    --paper: #1a2027;
-    --ink: #e8edf3;
-    --muted: #b1bdc9;
-    --line: #2f3945;
-    --brand: #59cbb7;
-    --brand-2: #ff8d69;
-    --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-  }
 }
 
 * {
@@ -106,23 +82,6 @@ a {
 .nav a:focus-visible,
 .nav a.current {
   background: color-mix(in oklab, var(--brand) 18%, transparent);
-  outline: none;
-}
-
-.theme-toggle {
-  appearance: none;
-  border: 1px solid var(--line);
-  background: var(--paper);
-  color: var(--ink);
-  border-radius: 999px;
-  padding: 7px 11px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
-  border-color: var(--brand);
   outline: none;
 }
 
