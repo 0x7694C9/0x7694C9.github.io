@@ -8,7 +8,8 @@
   });
 
   try {
-    const response = await fetch('/data/site-config.json', { cache: 'no-store' });
+    const configVersion = '20260307b';
+    const response = await fetch(`/data/site-config.json?v=${configVersion}`, { cache: 'no-store' });
     if (!response.ok) return;
     const config = await response.json();
 
