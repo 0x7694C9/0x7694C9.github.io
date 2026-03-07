@@ -9,6 +9,30 @@
   --shadow: 0 12px 32px rgba(31, 31, 31, 0.08);
 }
 
+:root[data-theme='dark'] {
+  --bg: #12161b;
+  --paper: #1a2027;
+  --ink: #e8edf3;
+  --muted: #b1bdc9;
+  --line: #2f3945;
+  --brand: #59cbb7;
+  --brand-2: #ff8d69;
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #12161b;
+    --paper: #1a2027;
+    --ink: #e8edf3;
+    --muted: #b1bdc9;
+    --line: #2f3945;
+    --brand: #59cbb7;
+    --brand-2: #ff8d69;
+    --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,8 +47,8 @@ body {
   font-family: 'Space Grotesk', 'Avenir Next', 'Segoe UI', sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 12% -5%, rgba(208, 90, 47, 0.15), transparent 35%),
-    radial-gradient(circle at 90% 0%, rgba(14, 122, 104, 0.15), transparent 40%),
+    radial-gradient(circle at 12% -5%, color-mix(in oklab, var(--brand-2) 28%, transparent), transparent 35%),
+    radial-gradient(circle at 90% 0%, color-mix(in oklab, var(--brand) 26%, transparent), transparent 40%),
     var(--bg);
   line-height: 1.6;
 }
@@ -42,8 +66,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(223, 213, 195, 0.85);
-  background: rgba(255, 250, 241, 0.86);
+  border-bottom: 1px solid color-mix(in oklab, var(--line) 90%, transparent);
+  background: color-mix(in oklab, var(--paper) 88%, transparent);
   backdrop-filter: blur(8px);
 }
 
@@ -52,6 +76,7 @@ a {
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
+  gap: 10px;
 }
 
 .brand {
@@ -66,7 +91,7 @@ a {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .nav a {
@@ -80,7 +105,24 @@ a {
 .nav a:hover,
 .nav a:focus-visible,
 .nav a.current {
-  background: rgba(14, 122, 104, 0.12);
+  background: color-mix(in oklab, var(--brand) 18%, transparent);
+  outline: none;
+}
+
+.theme-toggle {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--brand);
   outline: none;
 }
 
@@ -125,7 +167,7 @@ h2 {
 
 .lede {
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  color: #2b2a28;
+  color: var(--ink);
   max-width: 62ch;
 }
 
@@ -152,7 +194,7 @@ h2 {
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 8px 22px rgba(31, 31, 31, 0.15);
+  box-shadow: 0 8px 22px color-mix(in oklab, var(--ink) 20%, transparent);
   outline: none;
 }
 
@@ -162,7 +204,7 @@ h2 {
 }
 
 .btn-secondary {
-  background: #fff;
+  background: var(--paper);
   border-color: var(--line);
   color: var(--ink);
 }
@@ -230,7 +272,7 @@ h2 {
 }
 
 .command-card {
-  background: #fff;
+  background: color-mix(in oklab, var(--paper) 95%, #fff 5%);
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 12px;
@@ -259,7 +301,7 @@ h2 {
 .notice {
   border-left: 4px solid var(--brand-2);
   padding: 10px 12px;
-  background: rgba(208, 90, 47, 0.08);
+  background: color-mix(in oklab, var(--brand-2) 12%, transparent);
   border-radius: 8px;
 }
 
