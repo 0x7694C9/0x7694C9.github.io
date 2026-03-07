@@ -3,44 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Terms of Service • Aurora</title>
+  <title>Terms of Service - Aurora</title>
+  <meta name="description" content="Terms of service for using the Aurora Discord bot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="brand" href="/">Aurora</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main">
         <a href="/">Home</a>
+        <a href="/commands.html">Commands</a>
+        <a href="/invite.html">Invite</a>
+        <a href="/about.html">About</a>
+        <a href="/tos.html">ToS</a>
         <a href="/privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>Terms of Service</h1>
-    <p>Last updated: February 2026</p>
+    <section class="page-title section">
+      <h1>Terms of Service</h1>
+      <p class="muted">Last updated: <span data-bind="updated-date">March 6, 2026</span></p>
+      <p class="lede">By using Aurora, you agree to these terms. If you do not agree, do not invite or use the bot.</p>
+    </section>
 
-    <h2>1. Acceptance</h2>
-    <p>By using the Aurora bot you agree to these Terms. If you do not agree, do not add Aurora to your server or use its services.</p>
+    <section class="section">
+      <h2>1. Eligibility and platform rules</h2>
+      <p>You must comply with Discord's Terms of Service and Community Guidelines, plus any laws applicable in your location.</p>
+    </section>
 
-    <h2>2. Usage</h2>
-    <p>You are responsible for your server's configuration and use of Aurora. Do not use Aurora for illegal activities.</p>
+    <section class="section">
+      <h2>2. Acceptable use</h2>
+      <ul class="clean-list">
+        <li>Do not use Aurora for unlawful activity, harassment, or abuse.</li>
+        <li>Do not attempt to disrupt or overload the bot service.</li>
+        <li>Server administrators are responsible for how commands are configured and used in their communities.</li>
+      </ul>
+    </section>
 
-    <h2>3. Content</h2>
-    <p>Aurora may generate or relay content via commands. The bot owner is not responsible for content posted by users.</p>
+    <section class="section">
+      <h2>3. Availability and changes</h2>
+      <p>Aurora is provided on an "as is" and "as available" basis. Features may change, pause, or be removed at any time while the project evolves.</p>
+    </section>
 
-    <h2>4. Liability</h2>
-    <p>Use at your own risk. The authors provide no warranties. This project is closed-source and provided "as-is"; contact the project owner for inquiries.</p>
+    <section class="section">
+      <h2>4. Limitation of liability</h2>
+      <p>To the maximum extent permitted by law, the maintainer is not liable for indirect, incidental, or consequential damages resulting from use of Aurora.</p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>For questions about these Terms, contact the project owner via the support server or the project's contact channel.</p>
+    <section class="section">
+      <h2>5. Termination</h2>
+      <p>Access to Aurora may be restricted or revoked for misuse, abuse, or security concerns.</p>
+    </section>
+
+    <section class="section">
+      <h2>6. Contact</h2>
+      <p>Questions about these terms can be sent through the support server: <a data-bind="support-url" href="https://discord.gg/eBV9RsC2BV">Support Discord</a>.</p>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <small>&copy; Aurora</small>
+      <small>&copy; <span data-bind="brand-name">Aurora</span> • Last updated <span data-bind="updated-date">March 6, 2026</span></small>
     </div>
   </footer>
+
+  <script src="/js/site.js"></script>
 </body>
 </html>

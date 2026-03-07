@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aurora • Discord Bot</title>
+  <title>Aurora Discord Bot</title>
+  <meta name="description" content="Aurora is a Discord bot focused on moderation, utility, and music tools with clear docs and fast setup.">
+  <meta name="theme-color" content="#0e7a68">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <meta name="description" content="Aurora • a multipurpose Discord bot. Invite, docs, commands, privacy and terms." />
-  <meta name="theme-color" content="#6C5CE7">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="brand" href="/">Aurora</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main">
+        <a href="/">Home</a>
         <a href="/commands.html">Commands</a>
+        <a href="/invite.html">Invite</a>
         <a href="/about.html">About</a>
-        <a href="/tos.html">Terms</a>
+        <a href="/tos.html">ToS</a>
         <a href="/privacy.html">Privacy</a>
       </nav>
     </div>
@@ -23,44 +28,46 @@
 
   <main class="container">
     <section class="hero">
-      <h1>Aurora</h1>
-      <p class="tag">A multipurpose Discord bot • moderation, utilities, fun, and more.</p>
-      <p class="cta">
-        <a class="btn" href="#invite">Invite</a>
-        <a class="btn ghost" href="/commands.html">View commands</a>
-      </p>
+      <p class="kicker">Discord bot, built for real server use</p>
+      <h1>Moderation, utility, and music without the clutter.</h1>
+      <p class="lede">Aurora is built to stay useful in active communities: quick moderation actions, practical utility commands, and a command system that stays documented as the bot evolves.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-bind="invite-url" href="/invite.html">Invite Aurora</a>
+        <a class="btn btn-secondary" href="/commands.html">Browse commands</a>
+      </div>
     </section>
 
-    <section class="features">
-      <h2>Highlights</h2>
-      <ul>
-        <li>Moderation tools: ban, kick, mute, purge</li>
-        <li>Utilities: weather, uptime, server info</li>
-        <li>Slash command support and rich embeds</li>
-      </ul>
+    <section class="grid" aria-label="Highlights">
+      <article class="card">
+        <h3>Cleaner moderation flow</h3>
+        <p>Ban, kick, mute, purge, and case history are documented and grouped so staff can find tools quickly.</p>
+      </article>
+      <article class="card">
+        <h3>Command docs that stay current</h3>
+        <p>The website command list can be generated directly from your bot source, then manually grouped into sections.</p>
+      </article>
+      <article class="card">
+        <h3>Policy pages that read like humans wrote them</h3>
+        <p>ToS and privacy pages are plain-language and specific, so server owners know what Aurora does and does not collect.</p>
+      </article>
     </section>
 
-    <section id="invite" class="invite">
-      <h2>Invite Aurora</h2>
-      <p>Use the link below to invite Aurora to your server:</p>
-      <pre>https://discord.com/oauth2/authorize?client_id=1042119280851963914&permissions=4503601774913542&integration_type=0&scope=bot</pre>
-    </section>
-
-    <section class="support">
-      <h2>Support & Links</h2>
-      <ul>
-        <li><a href="https://discord.gg/eBV9RsC2BV">Discord support server</a></li>
-        <li><a href="https://discord.gg/eBV9RsC2BV">Contact the maintainer</a></li>
-        <li><a href="/privacy.html">Privacy Policy</a></li>
-        <li><a href="/tos.html">Terms of Service</a></li>
+    <section class="section">
+      <h2>Quick links</h2>
+      <ul class="link-list">
+        <li><a data-bind="invite-url" href="/invite.html">Invite Aurora to your server</a></li>
+        <li><a href="/commands.html">View command reference</a></li>
+        <li><a data-bind="support-url" href="https://discord.gg/eBV9RsC2BV">Join support Discord</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <small>&copy; Aurora</small>
+      <small>&copy; <span data-bind="brand-name">Aurora</span> • Last updated <span data-bind="updated-date">March 6, 2026</span></small>
     </div>
   </footer>
+
+  <script src="/js/site.js"></script>
 </body>
 </html>

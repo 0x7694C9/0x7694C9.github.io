@@ -3,44 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy Policy • Aurora</title>
+  <title>Privacy Policy - Aurora</title>
+  <meta name="description" content="Aurora privacy policy, including processed data, retention, and contact methods.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="brand" href="/">Aurora</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main">
         <a href="/">Home</a>
-        <a href="/tos.html">Terms</a>
+        <a href="/commands.html">Commands</a>
+        <a href="/invite.html">Invite</a>
+        <a href="/about.html">About</a>
+        <a href="/tos.html">ToS</a>
+        <a href="/privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>Privacy Policy</h1>
-    <p>Last updated: February 2026</p>
+    <section class="page-title section">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: <span data-bind="updated-date">March 6, 2026</span></p>
+      <p class="lede">This policy explains what Aurora processes to operate as a Discord bot and how server owners or users can request data-related actions.</p>
+    </section>
 
-    <h2>Data We Receive</h2>
-    <p>Aurora processes the data necessary to provide bot features: usernames, IDs, messages (when commands interact), and server configuration. We do not collect more than needed.</p>
+    <section class="section">
+      <h2>Data Aurora may process</h2>
+      <ul class="clean-list">
+        <li>Discord IDs (user, guild, channel, role) needed to run commands.</li>
+        <li>Moderation metadata, such as case numbers, actions, reasons, and timestamps.</li>
+        <li>Configuration values required for enabled features in a server.</li>
+        <li>Command usage events and runtime logs for reliability and abuse prevention.</li>
+      </ul>
+    </section>
 
-    <h2>How Data Is Used</h2>
-    <p>Data is used to run commands, moderation, logging (if enabled), and to provide configured features. We do not sell personal data.</p>
+    <section class="section">
+      <h2>How data is used</h2>
+      <ul class="clean-list">
+        <li>Execute requested bot features.</li>
+        <li>Maintain moderation history and server safety workflows.</li>
+        <li>Diagnose failures, prevent abuse, and improve feature reliability.</li>
+      </ul>
+      <p class="muted">Aurora does not sell personal data.</p>
+    </section>
 
-    <h2>Retention</h2>
-    <p>Retention depends on feature settings (e.g., moderation logs). Server owners control configuration and may delete logs via bot commands where available.</p>
+    <section class="section">
+      <h2>Retention and deletion</h2>
+      <p>Data is retained only as long as needed to provide the feature that created it, or to preserve moderation context for server staff. Server administrators may request cleanup of stored guild data by contacting support.</p>
+    </section>
 
-    <h2>Third Parties</h2>
-    <p>The bot may communicate with third-party APIs (e.g., weather). Data sent to third parties is limited to what's required for that service.</p>
+    <section class="section">
+      <h2>Third-party services</h2>
+      <p>Aurora depends on Discord and may call optional APIs (for example, weather providers) when users invoke those commands. Those providers receive only the minimum request data required for the command.</p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Questions or requests about privacy should be sent to the project owner via GitHub or support server.</p>
+    <section class="section">
+      <h2>Contact</h2>
+      <p>For privacy questions or deletion requests, contact the maintainer via the support server: <a data-bind="support-url" href="https://discord.gg/eBV9RsC2BV">Support Discord</a>.</p>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <small>&copy; Aurora</small>
+      <small>&copy; <span data-bind="brand-name">Aurora</span> • Last updated <span data-bind="updated-date">March 6, 2026</span></small>
     </div>
   </footer>
+
+  <script src="/js/site.js"></script>
 </body>
 </html>

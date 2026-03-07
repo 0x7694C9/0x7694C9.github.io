@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "id": "moderation",
+      "title": "Moderation",
+      "description": "Server safety, member actions, and case tracking.",
+      "commands": ["ban", "kick", "mute", "purge", "unban", "warn", "case", "case-note", "mod-history"]
+    },
+    {
+      "id": "tickets",
+      "title": "Ticketing",
+      "description": "Simple support ticket workflow.",
+      "commands": ["ticket-setup", "ticket-close", "ticket-add", "ticket-remove", "ticket-transfer", "ticket-priority"]
+    },
+    {
+      "id": "music",
+      "title": "Music",
+      "description": "Playback controls and queue management.",
+      "commands": ["play", "search", "pause", "resume", "skip", "stop-song", "nowplaying"]
+    },
+    {
+      "id": "utility",
+      "title": "Utility",
+      "description": "Helpful server and profile tools.",
+      "commands": ["ping", "serverinfo", "userinfo", "weather", "time", "uptime", "help", "botinfo"]
+    },
+    {
+      "id": "community",
+      "title": "Community",
+      "description": "Quality-of-life and fun commands.",
+      "commands": ["afk", "embed", "8ball"]
+    },
+    {
+      "id": "owner",
+      "title": "Owner Controls",
+      "description": "Restricted maintenance commands.",
+      "commands": ["restart", "stop"]
+    }
+  ],
+  "ungroupedTitle": "Uncategorized"
+}

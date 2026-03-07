@@ -3,39 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About • Aurora</title>
+  <title>About Aurora</title>
+  <meta name="description" content="What Aurora is, what it prioritizes, and where to get support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="brand" href="/">Aurora</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main">
+        <a href="/">Home</a>
         <a href="/commands.html">Commands</a>
+        <a href="/invite.html">Invite</a>
+        <a href="/about.html">About</a>
+        <a href="/tos.html">ToS</a>
         <a href="/privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>About Aurora</h1>
-    <p>Aurora is a Discord bot focused on moderation and utility features with an emphasis on ease-of-use and reliability.</p>
+    <section class="page-title section">
+      <h1>About Aurora</h1>
+      <p class="lede">Aurora is a multipurpose Discord bot built and maintained by an independent developer. The goal is practical tools first, then polish based on real server feedback.</p>
+    </section>
 
-    <h2>Features</h2>
-    <ul>
-      <li>Moderation commands and logging</li>
-      <li>Slash commands and traditional prefixed commands</li>
-      <li>Extensible architecture with config-driven options</li>
-    </ul>
+    <section class="section">
+      <h2>What Aurora prioritizes</h2>
+      <ul class="clean-list">
+        <li>Fast moderation workflows for active communities.</li>
+        <li>Clear command docs that can stay in sync with the codebase.</li>
+        <li>Incremental feature shipping without bloated setup.</li>
+      </ul>
+    </section>
 
-    <h2>Contribute</h2>
-    <p>Aurora is closed-source. If you'd like to contribute or discuss partnerships, please contact the project owner via the support server or contact channel.</p>
+    <section class="section">
+      <h2>Project direction</h2>
+      <p>The roadmap focuses on moderation quality, ticketing polish, and reliability in voice/music features. Feature requests are reviewed by impact and maintenance cost, not just popularity.</p>
+    </section>
+
+    <section class="section">
+      <h2>Support</h2>
+      <p>Use the support server for bug reports, suggestions, and setup issues: <a data-bind="support-url" href="https://discord.gg/eBV9RsC2BV">Join support Discord</a>.</p>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <small>&copy; Aurora</small>
+      <small>&copy; <span data-bind="brand-name">Aurora</span> • Last updated <span data-bind="updated-date">March 6, 2026</span></small>
     </div>
   </footer>
+
+  <script src="/js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,344 @@
+[
+  {
+    "name": "8ball",
+    "description": "Ask the magic 8-ball a question",
+    "file": "8ball.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "afk",
+    "description": "Set your AFK status with an optional reason",
+    "file": "afk.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ban",
+    "description": "Ban a user from the server (admin only)",
+    "file": "ban.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "4"
+    ]
+  },
+  {
+    "name": "botinfo",
+    "description": "Gets technical information about the bot",
+    "file": "botinfo.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "case",
+    "description": "Look up a moderation case by ID or case number",
+    "file": "case.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "1099511627776"
+    ]
+  },
+  {
+    "name": "case-note",
+    "description": "Append a moderator note to a moderation case",
+    "file": "case_note.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "1099511627776"
+    ]
+  },
+  {
+    "name": "clear-warnings",
+    "description": "Clear warnings of a member",
+    "file": "clear-warnings.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "command-stats",
+    "description": "Show command execution metrics (owner only)",
+    "file": "command_stats.js",
+    "guildOnly": false,
+    "ownerOnly": true,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "embed",
+    "description": "Create a custom embed message",
+    "file": "embed.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "help",
+    "description": "Shows all available commands",
+    "file": "help.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "kick",
+    "description": "Kick a user from the server (admin only)",
+    "file": "kick.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "2"
+    ]
+  },
+  {
+    "name": "mod-history",
+    "description": "View moderation history for a user or recent guild cases",
+    "file": "mod_history.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "1099511627776"
+    ]
+  },
+  {
+    "name": "mute",
+    "description": "Timeout (mute) a member for a set duration",
+    "file": "mute.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "1099511627776"
+    ]
+  },
+  {
+    "name": "nowplaying",
+    "description": "Show currently playing track",
+    "file": "nowplaying.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "pause",
+    "description": "Pause the current song",
+    "file": "pause.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ping",
+    "description": "Replies with Pong and latency",
+    "file": "ping.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "play",
+    "description": "Play audio from a URL or search query",
+    "file": "play.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "purge",
+    "description": "Delete a specified number of messages (admin only)",
+    "file": "purge.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "8192"
+    ]
+  },
+  {
+    "name": "restart",
+    "description": "Restart the bot (owner only)",
+    "file": "restart.js",
+    "guildOnly": false,
+    "ownerOnly": true,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "resume",
+    "description": "Resume the currently paused song",
+    "file": "resume.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "search",
+    "description": "Search YouTube tracks",
+    "file": "search.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "serverinfo",
+    "description": "Get information about the server",
+    "file": "serverinfo.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "skip",
+    "description": "Skip the current song",
+    "file": "skip.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "status",
+    "description": "Show runtime bot status",
+    "file": "status.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "stop",
+    "description": "Shut down the bot (owner only)",
+    "file": "stop.js",
+    "guildOnly": false,
+    "ownerOnly": true,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "stop-song",
+    "description": "Stop the current song and clear the queue",
+    "file": "stop_song.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ticket-add",
+    "description": "Add a user to the current ticket",
+    "file": "ticket_add.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ticket-close",
+    "description": "Close the current ticket channel",
+    "file": "ticket_close.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ticket-priority",
+    "description": "Set priority for the current ticket",
+    "file": "ticket_priority.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ticket-remove",
+    "description": "Remove a user from the current ticket",
+    "file": "ticket_remove.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "ticket-setup",
+    "description": "Configure and send the ticket panel",
+    "file": "ticket_setup.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "32"
+    ]
+  },
+  {
+    "name": "ticket-transfer",
+    "description": "Transfer ticket ownership to another user",
+    "file": "ticket_transfer.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "time",
+    "description": "Show local time for a location",
+    "file": "time.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "unban",
+    "description": "Unban a user from the server (admin only)",
+    "file": "unban.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "4"
+    ]
+  },
+  {
+    "name": "unmute",
+    "description": "Remove timeout from a member",
+    "file": "unmute.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "1099511627776"
+    ]
+  },
+  {
+    "name": "uptime",
+    "description": "Shows how long the bot has been online",
+    "file": "uptime.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "userinfo",
+    "description": "Get information about yourself or another user",
+    "file": "userinfo.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "warn",
+    "description": "Warn a user and create a moderation case",
+    "file": "warn.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": [
+      "1099511627776"
+    ]
+  },
+  {
+    "name": "warnings",
+    "description": "View warnings of a member",
+    "file": "warnings.js",
+    "guildOnly": true,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "weather",
+    "description": "Get current weather for a location",
+    "file": "weather.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  }
+]

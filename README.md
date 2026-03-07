@@ -1,7 +1,16 @@
 # Aurora website
 
-This repository comtains source code for a website I created for my Discord bot, Aurora.
+Static website for the Aurora Discord bot.
 
-Honestly, I have no idea if GitHub allows for these repositories to be private, so I'm going to leave it open... I also don't have funding for domain subscriptions soooo yeah.
+## Command docs workflow
 
-You can find the website at https://aurora.is-a.software
+The commands page can be generated from the bot source and then grouped manually:
+
+1. From the bot repo (`Aurora`), run:
+   - `npm run export:site-commands -- --out data/commands.generated.json`
+2. Copy that file into website repo:
+   - `../aurora.github.io/data/commands.generated.json`
+3. Edit groups/order in:
+   - `../aurora.github.io/data/command-groups.json`
+
+Any command not listed in a manual group appears under `Uncategorized` automatically.

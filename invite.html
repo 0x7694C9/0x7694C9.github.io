@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Commands - Aurora</title>
-  <meta name="description" content="Live command reference for Aurora, generated from source and grouped manually.">
+  <title>Invite Aurora</title>
+  <meta name="description" content="Invite Aurora to your Discord server using the official OAuth link.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -26,17 +26,25 @@
   </header>
 
   <main class="container">
-    <section class="page-title section">
-      <h1>Commands</h1>
-      <p class="lede">This list is generated from command source files and then grouped manually. Update groups in <code>/data/command-groups.json</code>.</p>
-      <p class="notice">If a command exists in the bot but not in a group, it appears under <strong>Uncategorized</strong> so it never gets missed.</p>
+    <section class="hero">
+      <p class="kicker">Official invite</p>
+      <h1>Add Aurora to your server</h1>
+      <p class="lede">Use the Discord OAuth page to choose a server and review permissions before authorizing.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-bind="invite-url" href="https://discord.com/">Continue to Discord</a>
+        <a class="btn btn-secondary" data-bind="support-url" href="https://discord.gg/eBV9RsC2BV">Need setup help?</a>
+      </div>
     </section>
 
-    <div id="commands-root" aria-live="polite">
-      <section class="section">
-        <p>Loading commands...</p>
-      </section>
-    </div>
+    <section class="section">
+      <h2>What this link requests</h2>
+      <ul class="clean-list">
+        <li>Bot access for server features (moderation, utility, music).</li>
+        <li><code>applications.commands</code> scope so slash commands register correctly.</li>
+        <li>Permissions are still controlled by your server roles and channel overrides.</li>
+      </ul>
+      <p class="muted">Invite URL currently set to: <code data-bind="invite-url" data-bind-text="true">loading...</code></p>
+    </section>
   </main>
 
   <footer class="footer">
@@ -46,6 +54,5 @@
   </footer>
 
   <script src="/js/site.js"></script>
-  <script src="/js/commands.js"></script>
 </body>
 </html>
