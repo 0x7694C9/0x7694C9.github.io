@@ -6,7 +6,6 @@
   "minecraftServer": {
     "name": "Aurora Minecraft Server",
     "host": "aurora.atlxcore.org",
-    "port": "25540",
     "version": "1.21.x (Accepts older versions)",
     "edition": "Java"
   }
