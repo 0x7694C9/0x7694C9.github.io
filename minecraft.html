@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Invite Aurora</title>
-  <meta name="description" content="Invite Aurora to your Discord server using the official OAuth link.">
+  <title>Minecraft - Aurora</title>
+  <meta name="description" content="Join Aurora's Minecraft server and community.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,23 +28,23 @@
 
   <main class="container">
     <section class="hero">
-      <p class="kicker">Official invite</p>
-      <h1>Add Aurora to your server</h1>
-      <p class="lede">Use the Discord OAuth page to choose a server and review permissions before authorizing.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" data-bind="invite-url" href="https://discord.com/">Continue to Discord</a>
-        <a class="btn btn-secondary" data-bind="support-url" href="https://discord.gg/xHvKMXf9u4">Need setup help?</a>
+      <p class="kicker">Community server</p>
+      <h1 data-bind="minecraft-name">Aurora Minecraft Server</h1>
+      <p class="lede">Play with the Aurora community outside Discord. Build, explore, and chill.</p>
+      <div class="minecraft-grid">
+        <article class="minecraft-card">
+          <h3>Connection</h3>
+          <p><strong>Address:</strong> <code data-bind="minecraft-address">aurora.atlxcore.org:25540</code></p>
+          <p><strong>Host:</strong> <span data-bind="minecraft-host">aurora.atlxcore.org</span></p>
+          <p><strong>Port:</strong> <span data-bind="minecraft-port">25540</span></p>
+        </article>
+        <article class="minecraft-card">
+          <h3>Server Details</h3>
+          <p><strong>Version:</strong> <span data-bind="minecraft-version">1.21.x (Accepts older versions)</span></p>
+          <p><strong>Edition:</strong> <span data-bind="minecraft-edition">Java</span></p>
+          <p><a data-bind="support-url" href="https://discord.gg/xHvKMXf9u4">Need help joining?</a></p>
+        </article>
       </div>
-    </section>
-
-    <section class="section">
-      <h2>What this link requests</h2>
-      <ul class="clean-list">
-        <li>Bot access for server features (moderation, utility, music).</li>
-        <li><code>applications.commands</code> scope so slash commands register correctly.</li>
-        <li>Permissions are still controlled by your server roles and channel overrides.</li>
-      </ul>
-      <p class="muted">Invite URL currently set to: <code data-bind="invite-url" data-bind-text="true">loading...</code></p>
     </section>
   </main>
 

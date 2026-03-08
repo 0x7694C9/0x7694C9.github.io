@@ -2,5 +2,12 @@
   "brandName": "Aurora",
   "lastUpdated": "March 6, 2026",
   "inviteUrl": "https://discord.com/oauth2/authorize?client_id=1042119280851963914&permissions=4503601774913542&integration_type=0&scope=bot%20applications.commands",
-  "supportUrl": "https://discord.gg/xHvKMXf9u4"
+  "supportUrl": "https://discord.gg/xHvKMXf9u4",
+  "minecraftServer": {
+    "name": "Aurora Minecraft Server",
+    "host": "aurora.atlxcore.org",
+    "port": "25540",
+    "version": "1.21.x (Accepts older versions)",
+    "edition": "Java"
+  }
 }

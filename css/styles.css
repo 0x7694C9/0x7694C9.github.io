@@ -284,3 +284,22 @@ h2 {
     border-radius: 14px;
   }
 }
+
+
+.minecraft-panel {
+  border-left: 4px solid var(--brand);
+}
+
+.minecraft-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.minecraft-card {
+  background: color-mix(in oklab, var(--paper) 95%, #fff 5%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}

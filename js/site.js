@@ -35,6 +35,35 @@
     document.querySelectorAll('[data-bind="updated-date"]').forEach((el) => {
       if (config.lastUpdated) el.textContent = config.lastUpdated;
     });
+
+    const mc = config.minecraftServer || {};
+    const host = mc.host || '';
+    const port = mc.port || '';
+    const address = host && port ? `${host}:${port}` : (host || port || 'Not configured');
+
+    document.querySelectorAll('[data-bind="minecraft-name"]').forEach((el) => {
+      if (mc.name) el.textContent = mc.name;
+    });
+
+    document.querySelectorAll('[data-bind="minecraft-host"]').forEach((el) => {
+      if (host) el.textContent = host;
+    });
+
+    document.querySelectorAll('[data-bind="minecraft-port"]').forEach((el) => {
+      if (port) el.textContent = String(port);
+    });
+
+    document.querySelectorAll('[data-bind="minecraft-address"]').forEach((el) => {
+      el.textContent = address;
+    });
+
+    document.querySelectorAll('[data-bind="minecraft-version"]').forEach((el) => {
+      if (mc.version) el.textContent = mc.version;
+    });
+
+    document.querySelectorAll('[data-bind="minecraft-edition"]').forEach((el) => {
+      if (mc.edition) el.textContent = mc.edition;
+    });
   } catch (_error) {
     // Config loading is optional for local previews.
   }
