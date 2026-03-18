@@ -16,6 +16,14 @@
     "requiredUserPermissions": []
   },
   {
+    "name": "announce-downtime",
+    "description": "Broadcast a downtime announcement to all guilds (owner only)",
+    "file": "announce_downtime.js",
+    "guildOnly": false,
+    "ownerOnly": true,
+    "requiredUserPermissions": []
+  },
+  {
     "name": "ban",
     "description": "Ban a user from the server (admin only)",
     "file": "ban.js",
@@ -62,17 +70,17 @@
     "requiredUserPermissions": []
   },
   {
-    "name": "command-stats",
-    "description": "Show command execution metrics (owner only)",
-    "file": "command_stats.js",
-    "guildOnly": false,
-    "ownerOnly": true,
-    "requiredUserPermissions": []
-  },
-  {
     "name": "embed",
     "description": "Create a custom embed message",
     "file": "embed.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "github",
+    "description": "Use GitHub APIs for repository, user, issue, and status lookups",
+    "file": "github.js",
     "guildOnly": false,
     "ownerOnly": false,
     "requiredUserPermissions": []
@@ -96,6 +104,14 @@
     ]
   },
   {
+    "name": "minecraft",
+    "description": "Check Minecraft Java and Bedrock server status",
+    "file": "minecraft.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
     "name": "mod-history",
     "description": "View moderation history for a user or recent guild cases",
     "file": "mod_history.js",
@@ -104,6 +120,14 @@
     "requiredUserPermissions": [
       "1099511627776"
     ]
+  },
+  {
+    "name": "monitor",
+    "description": "Monitor external URLs",
+    "file": "monitor.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
   },
   {
     "name": "mute",
@@ -201,6 +225,14 @@
     "name": "status",
     "description": "Show runtime bot status",
     "file": "status.js",
+    "guildOnly": false,
+    "ownerOnly": false,
+    "requiredUserPermissions": []
+  },
+  {
+    "name": "steam",
+    "description": "Search Steam apps, player counts, and recent news",
+    "file": "steam.js",
     "guildOnly": false,
     "ownerOnly": false,
     "requiredUserPermissions": []
